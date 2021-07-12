@@ -1,0 +1,29 @@
+
+Maths<input id=t1 /> <br>
+English<input id=t2 /> <br>
+BEEE<input id=t3 /> <br>
+Mechanics<input id=t4 /> <br>
+Chemistry<input id=t5 /> <br>
+
+
+<input type=button value=Add onclick="add()" /> <br>
+<input type=button value=Percentage onclick="ptg()" /> <br>
+<output id=out1 />
+<script>
+function add()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=parseInt(t3.value);
+d=parseInt(t4.value);
+e=parseInt(t5.value);
+f=a+b+c+d+e;
+out1.value='Sum of marks is:' + f
+}
+
+function ptg()
+{
+g=f/5;
+out1.value='Percentage gained:' + g +'%'
+}
+</script>
