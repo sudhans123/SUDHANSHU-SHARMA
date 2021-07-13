@@ -1,0 +1,78 @@
+
+<a href=home.html> home </a> |
+<a href=about.html>about </a>|
+<a href=register.html> register </a> |
+<a href=contact.html> contact</a>|
+<a href=login.html> login </a>|
+<a href=show.html> show </a> |
+
+<h1>REGISTRATION FORM </h1>
+
+<br>
+<br>
+<br>
+
+<table border="0">
+<tr><td> User id * </td><td><input name="user_id" id="user_id" required></td></tr>
+<tr><td> Name * </td><td><input name="name" id="name" required></td></tr>
+<tr><td> Password * </td><td><input type="password" name="password" id="password" required></td></tr>
+<tr><td> Email Id * </td><td><input type="Email" name="email" id="email" required></td></tr>
+<tr><td> Contact  * </td><td><input type="Number" name="contact" id="contact" required></td></tr>
+<tr><td> Address </td><td> <input type="address" name="address" id="address"></td> </tr>
+<tr><td> Date of Birth * </td><td><input type="date" name="dob" id="dob" required></td></tr>
+<tr><td> City * </td><td><input type="text" name="city" id="city" required></td></tr>
+<tr><td> Pincode  * </td><td><input type="Number" name="pincode" id="pincode" required></td></tr>
+<tr> <td> </td> <td> <input type=button value=Register onclick="View()"></td></tr>
+</table>
+
+<p id="p1"></p>
+<script>
+function View()
+{
+a=user_id.value;
+b=name.value;
+c=password.value;
+d=email.value;
+e=contact.value;
+f=address.value;
+g=dob.value;
+h=city.value;
+i=pincode.value;
+out="<table border=5>"
+out+="<tr><th>User Id <td>"+a
+out+="<tr><th>Name <td>"+b
+out+="<tr><th>Password <td>"+c
+out+="<tr><th>Email <td>"+d
+out+="<tr><th>Contact <td>"+e
+out+="<tr><th>Address <td>"+f
+out+="<tr><th>Date of Birth <td>"+g
+out+="<tr><th>City <td>"+h
+out+="<tr><th>Pincode <td>"+i
+p1.innerHTML=out
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
