@@ -1,0 +1,43 @@
+<style>
+.screen { height:40px;width:215px; font-size:20;text-align:right }
+.btn { height:40px;width:50px; font-size:20; }
+</style>
+<center>
+<table border="0">
+<tr><th colspan="4"><input id=t1 class=screen></th></tr>
+<tr><th colspan="4"><input id=t2 class=screen></th></tr>
+<tr><td>
+<input type=button value= + class= btn onclick="abc()"/></td><td>
+<input type=button value= - class= btn onclick="xyz()"/>
+</td><td>
+<input type=button value= * class= btn onclick="rst()"/>
+</td><td>
+<input type=button value= / class= btn onclick="pqr()"/></td></tr>
+</table><br><br>
+<output id=out1 />
+<script>
+function abc()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=a+b;
+out1.value='Value  :  ' +  c }
+function xyz()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=a-b;
+out1.value='Value  :  ' +  c }
+function rst()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=a*b;
+out1.value='Value  :  ' +  c }
+function pqr()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=a/b;
+out1.value='Value  :  ' + c }
+</script>
