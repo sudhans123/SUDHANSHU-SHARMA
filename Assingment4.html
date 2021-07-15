@@ -1,0 +1,45 @@
+<style>
+    h1{color: rgb(255, 136, 0);}
+    .inp{height:30px;}
+    </style>
+    
+    <center>
+    <br>
+    <h1>GREATER NUMBER</h1>
+    <br>
+    
+    <b><font size=6 color=yellow> first = </font></b>
+    <input type="text" id="n1" class="inp" /><br><br>
+    
+    <b><font size=5 color=red >second = </font></b>
+    <input type="text" id="n2" class="inp" /><br><br>
+    
+    <b><font size=5 color=green >third = </font></b>
+    <input type="text" id="n3" class="inp" /><br><br>
+    
+    <input type="button" value=Find onclick="gtr()" />
+    
+    
+    <br><div id="d1" > </div>
+    <script>
+    function gtr()
+    {
+    a=parseInt(n1.value)
+    b=parseInt(n2.value)
+    c=parseInt(n3.value)
+    
+    if (a>b & a>c)
+    d="first is greater"
+    
+    else if (b>a & b>c)
+    d="second is greater"
+    
+    else if (c>a & c>b)
+    d="third is greater"
+    
+    else if (a == b & b == c)
+    d="All numbers are equal"
+    d1.innerHTML= d
+    }
+    </script>
+    </center>
